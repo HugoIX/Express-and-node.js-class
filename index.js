@@ -9,7 +9,7 @@ app.use(express.json());
 
 const ExpressAPP = 
 
-// "mongodb+srv://hapm0423_db_user:W8q6UV9biEMQCxFC@mongoriwi.kavkjcp.mongodb.net/?appName=MongoRIWI"
+
 
 MONGO_URL;
 
