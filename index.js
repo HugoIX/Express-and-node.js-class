@@ -1,20 +1,17 @@
 const express = require('express');
 const mongoose = require('mongoose');
 const { stringify } = require('node:querystring');
+require('dotenv').config();
 const app = express();
 const PORT = 3000;
-process.env.MONGO_URL
 
 app.use(express.json());
 
-const ExpressAPP = 
-
-MONGO_URL;
+const mongoURL = process.env.MONGO_URL;
 
 
 
-
-mongoose.connect(ExpressAPP)
+mongoose.connect(mongoURL)
     .then(() => console.log("Conectado a MongoDB Atlas"))
     .catch((err) => {
         console.error("Error Detallado:");
